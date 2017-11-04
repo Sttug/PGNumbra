@@ -64,7 +64,7 @@ def check_account(acc):
                             break
                 else:
                     acc.log_info(
-                        "Account already reached level {}. Not spinning any Pokestop.".format(spin_below_level))
+                        "Account already reached level {}. Not spinning any Pokestop.".format(lvl))
         except Exception as e:
             log.exception("Error checking account {}: {}".format(acc.username, repr(e)))
 
